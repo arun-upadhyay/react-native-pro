@@ -19,11 +19,12 @@ export default class Counter extends Component {
 
     render() {
         return (
-            <ScrollView>
+            <ScrollView >
                 <TouchableOpacity>
-                    <Text onPress={this.increaseCounter} style={{flexDirection: 'row', width: 200}}> Increase</Text>
+                    <Text onPress={this.increaseCounter}
+                          style={{flex: 2, flexDirection: 'row', width: 200}}> Increase</Text>
                 </TouchableOpacity>
-                <Text style={{flexDirection: 'row', width: 100}}> {this.state.counter} </Text>
+                <Text style={{flex: 2, flexDirection: 'row', width: 100}}> {this.state.counter} </Text>
                 <TouchableOpacity>
                     <Text onPress={this.decreaseCounter} style={{flexDirection: 'row', width: 200}}> Decrease</Text>
                 </TouchableOpacity>
